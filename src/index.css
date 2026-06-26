@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+/* Pastikan halaman memanfaatkan seluruh tinggi dan lebar layar tanpa pembatas */
+body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #EFF6FF; /* Warna latar belakang abu-abu terang yang soft */
+}
