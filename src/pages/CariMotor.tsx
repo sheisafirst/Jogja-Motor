@@ -2,7 +2,7 @@ import { useState } from "react";
 import { allMotors } from "../components/blocks/MotorData"; 
 import Navbar from "../components/blocks/Navbar";
 import Footer from "../components/blocks/Footer";
-import MotorCard from "../components/blocks/MotorCard";
+import MotorCard from "../components/ui/MotorCard";
 
 interface Motor {
   id: number;
