@@ -1,6 +1,10 @@
 // (Grid logo merek) dashboard
 
+import { useNavigate } from "react-router-dom";
+
 export default function BrandGrid() {
+  const navigate = useNavigate();
+
   const brands = [
     { name: "HONDA", color: "bg-red-50 text-red-700 border-red-100" },
     { name: "YAMAHA", color: "bg-blue-50 text-blue-700 border-blue-100" },
@@ -13,18 +17,26 @@ export default function BrandGrid() {
       {/* Header Section */}
       <div className="mb-8">
         <h2 className="text-2xl font-bold text-gray-900">Merek Motor</h2>
-        <p className="text-gray-500 mt-1">Pilih motor dari merek favorit Anda</p>
+        <p className="text-gray-500 mt-1">
+          Pilih motor dari merek favorit Anda
+        </p>
       </div>
 
       {/* Grid Logo Merek */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
         {brands.map((brand, i) => (
-          <div 
-            key={i} 
+          <div
+            key={i}
             className={`${brand.color} border p-8 rounded-2xl flex flex-col items-center justify-center transition-all hover:scale-[1.02] cursor-pointer`}
           >
-            <h3 className="text-xl font-bold tracking-wide">{brand.name}</h3>
-            <span className="text-sm font-medium mt-2 opacity-80 hover:underline">
+            <h3 className="text-xl font-bold tracking-wide">
+              {brand.name}
+            </h3>
+
+            <span
+              onClick={() => navigate("/CariMotor")}
+              className="text-sm font-medium mt-2 opacity-80 hover:underline cursor-pointer"
+            >
               Lihat Semua →
             </span>
           </div>
