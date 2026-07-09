@@ -31,7 +31,7 @@ export default function DetailMotor() {
       <main className="container mx-auto px-4 py-8">
         {/* Tombol Kembali */}
         <Link
-          to="/"
+          to="/home"
           className="flex items-center text-gray-500 hover:text-blue-600 mb-6 font-medium"
         >
           <ChevronLeft size={20} /> Kembali ke Beranda

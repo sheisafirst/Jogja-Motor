@@ -1,0 +1,132 @@
+/* ===========================
+   Splash Screen
+=========================== */
+
+.splash-page {
+  position: fixed;
+  inset: 0;
+
+  width: 100vw;
+  height: 100vh;
+
+  overflow: hidden;
+  background: #fff;
+}
+
+/* Background */
+
+.splash-bg {
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center;
+
+  z-index: 0;
+
+  user-select: none;
+  pointer-events: none;
+}
+
+/* Content */
+
+.splash-content {
+  position: absolute;
+
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  z-index: 10;
+}
+
+/* Logo */
+
+.splash-logo {
+  width: 340px;
+  height: auto;
+
+  margin-bottom: 38px;
+
+  user-select: none;
+}
+
+/* Text */
+
+.splash-title {
+  font-family: "Poppins", sans-serif;
+
+  font-size: 25px;
+  font-weight: 500;
+
+  color: #404040;
+
+  margin-bottom: 40px;
+
+  text-align: center;
+}
+
+/* Button */
+
+.splash-btn {
+  width: 290px;
+  height: 58px;
+
+  border: none;
+  border-radius: 14px;
+
+  background: #4b82f4;
+
+  color: white;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: all 0.25s ease;
+
+  box-shadow: 0 8px 24px rgba(75, 130, 244, 0.25);
+}
+
+.splash-btn:hover {
+  background: #3876ee;
+  transform: translateY(-2px);
+}
+
+.splash-btn:active {
+  transform: scale(0.98);
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media (max-width: 768px) {
+  .splash-logo {
+    width: 220px;
+    margin-bottom: 28px;
+  }
+
+  .splash-title {
+    font-size: 20px;
+    padding: 0 24px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+  }
+
+  .splash-btn {
+    width: 230px;
+    height: 52px;
+    font-size: 16px;
+  }
+}

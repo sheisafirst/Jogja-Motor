@@ -112,7 +112,7 @@ export default function BookingSuccess() {
         {/* Tombol Aksi */}
         <div className="flex flex-col gap-3">
           <Link
-            to="/"
+            to="/home"
             className="w-full py-4 bg-blue-600 text-white rounded-2xl font-bold text-center flex items-center justify-center gap-2"
           >
             <Home size={18} /> Kembali ke Beranda

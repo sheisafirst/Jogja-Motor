@@ -1,7 +1,9 @@
 import { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Dashbard from "./pages/dashboard";
+import Splash from './pages/Splash';
+import Dashboard from "./pages/dashboard";
+import Register from "./pages/register";
 import Login from "./pages/login";
 import Home from "./pages/home";
 import CariMotor from "./pages/CariMotor";
@@ -15,7 +17,9 @@ export function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Dashbard />} />
+        <Route path="/" element={<Splash />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
         <Route path="/home" element={<Home />} />
         <Route path="/CariMotor" element={<CariMotor />} />{" "}

@@ -21,7 +21,7 @@ export default function HubungiPenjual() {
       <Navbar />
       <main className="container mx-auto px-4 py-8">
         <div className="flex gap-2 text-sm text-gray-500 mb-6">
-          <Link to="/" className="hover:text-blue-600">
+          <Link to="/home" className="hover:text-blue-600">
             Beranda
           </Link>{" "}
           {">"}
