@@ -40,27 +40,27 @@ export default function Footer() {
           </h3>
           <ul className="space-y-3 text-sm">
             <li>
-              <a href="#" className="hover:text-white transition">
+              <a href="/home" className="hover:text-white transition">
                 Beranda
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-white transition">
+              <a href="/CariMotor" className="hover:text-white transition">
                 Cari Motor
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-white transition">
+              <a href="/TentangKami" className="hover:text-white transition">
                 Tentang Kami
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-white transition">
+              <a href="/login" className="hover:text-white transition">
                 Masuk
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-white transition">
+              <a href="/register" className="hover:text-white transition">
                 Daftar Akun
               </a>
             </li>
@@ -74,32 +74,32 @@ export default function Footer() {
           </h3>
           <ul className="space-y-3 text-sm">
             <li>
-              <a href="#" className="hover:text-white transition">
+              <a href="/CariMotor" className="hover:text-white transition">
                 Honda
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-white transition">
+              <a href="/CariMotor#" className="hover:text-white transition">
                 Yamaha
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-white transition">
+              <a href="/CariMotor" className="hover:text-white transition">
                 Kawasaki
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-white transition">
+              <a href="/CariMotor#" className="hover:text-white transition">
                 Suzuki
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-white transition">
+              <a href="/CariMotor#" className="hover:text-white transition">
                 TVS
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-white transition">
+              <a href="/CariMotor" className="hover:text-white transition">
                 Vespa
               </a>
             </li>

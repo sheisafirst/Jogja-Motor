@@ -26,7 +26,7 @@ const [userRole, setUserRole] = useState<"admin" | "user" | null>(null);
       <main>
         <Hero />
 
-        <div className="py-20">
+        <div className="py-25">
           <StatsSection />
         </div>
 

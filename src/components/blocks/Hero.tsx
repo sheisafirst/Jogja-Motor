@@ -1,4 +1,8 @@
+import { useNavigate } from "react-router-dom";
+
 export default function Hero() {
+  const navigate = useNavigate();
+
   return (
     <section className="relative w-full h-150 flex items-center">
       {/* Gambar Background */}
@@ -37,7 +41,10 @@ export default function Hero() {
               placeholder="Cari Honda Beat, Yamaha NMAX..."
               className="w-full px-4 py-2.5 text-gray-800 outline-none rounded-2xl bg-transparent"
             />
-            <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2.5 rounded-xl font-medium transition whitespace-nowrap">
+            <button
+              onClick={() => navigate("/CariMotor")}
+              className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2.5 rounded-xl font-medium transition whitespace-nowrap"
+            >
               Cari Motor
             </button>
           </div>
@@ -45,14 +52,17 @@ export default function Hero() {
           {/* Tag Populer */}
           <div className="mt-6 text-sm text-gray-300">
             <span className="mr-2">Populer:</span>
+
             {["Vario 160", "NMAX", "Ninja 250", "PCX 160"].map((item) => (
-              <a
+              <button
                 key={item}
-                href="#"
-                className="mr-4 hover:text-white underline underline-offset-4"
+                onClick={() =>
+                  navigate(`/CariMotor?search=${encodeURIComponent(item)}`)
+                }
+                className="mr-4 hover:text-white underline underline-offset-4 bg-transparent border-none cursor-pointer"
               >
                 {item}
-              </a>
+              </button>
             ))}
           </div>
         </div>
