@@ -20,7 +20,7 @@ const [userRole, setUserRole] = useState<"admin" | "user" | null>(null);
 
   return (
     <div className="bg-gray-50 min-h-screen">
-      <Navbar userRole={userRole} />
+      <Navbar />
 
       {/* Semua konten di sini */}
       <main>
@@ -38,10 +38,6 @@ const [userRole, setUserRole] = useState<"admin" | "user" | null>(null);
         <MotorTerbaru />
         <CTASection />
 
-        {/* Tambahkan tombol ini di dalam main untuk simulasi */}
-        <button onClick={handleLogout} className="text-red-500 underline">
-          Simulasi Klik Logout
-        </button>
       </main>
 
       <Footer />
