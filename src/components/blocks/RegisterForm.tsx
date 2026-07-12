@@ -16,7 +16,7 @@ const Register: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-slate-50 flex items-center justify-center p-4">
+    <div className="min-h-screen flex items-center justify-center p-4">
       <div className="bg-white p-8 rounded-3xl shadow-sm w-full max-w-sm text-center border border-slate-100">
         {/* Logo */}
         <img src="/logo1.png" alt="Logo" className="w-24 mx-auto mb-6" />
@@ -36,7 +36,7 @@ const Register: React.FC = () => {
             <input
               type="text"
               className="w-full p-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none"
-              placeholder="Masukkan nama lengkap"
+              placeholder="Esther Yu"
             />
           </div>
 
@@ -47,7 +47,7 @@ const Register: React.FC = () => {
             <input
               type="email"
               className="w-full p-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none"
-              placeholder="contoh@email.com"
+              placeholder="user@gmail.com"
             />
           </div>
 

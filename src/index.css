@@ -8,3 +8,9 @@ body{
   min-height: 100vh;
   background-color: #EFF6FF; /* Warna latar belakang abu-abu terang yang soft */
 }
+
+:root {
+  --background: #EFF6FF;
+  --primary: #2563EB;
+  --card: #FFFFFF;
+}

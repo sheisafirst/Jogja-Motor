@@ -7,7 +7,6 @@ import Navbar from "../components/blocks/Navbar";
 import Footer from "../components/blocks/Footer";
 import { MapPin, Calendar as CalendarIcon, Clock } from "lucide-react";
 
-
 export default function Booking() {
   const [date, setDate] = useState(new Date());
   const [selectedTime, setSelectedTime] = useState("");
@@ -28,7 +27,7 @@ export default function Booking() {
   };
 
   return (
-    <div className="bg-gray-50 min-h-screen">
+    <div className="bg-[#EFF6FF] min-h-screen">
       <Navbar />
       <main className="container mx-auto px-4 py-8">
         {/* Breadcrumb */}
