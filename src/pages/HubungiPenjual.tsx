@@ -133,8 +133,13 @@ export default function HubungiPenjual() {
                   <CheckCircle size={16} /> Respons cepat ( 1 jam)
                 </p>
               </div>
-              <button className="w-full bg-green-500 text-white py-4 rounded-xl font-bold flex items-center justify-center gap-2">
-                +62 812-3456-7890
+              <button
+                onClick={() =>
+                  window.open("https://wa.me/6281234567890", "_blank")
+                }
+                className="w-full bg-green-500 text-white py-4 rounded-xl font-bold flex items-center justify-center gap-2 hover:bg-green-600 transition"
+              >
+                WhatsApp
               </button>
             </div>
             {/* Card Tambahan: Mau lihat langsung? */}
