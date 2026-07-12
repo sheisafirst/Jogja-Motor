@@ -220,8 +220,16 @@ export default function DetailMotor() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {allMotors
-              .filter((m) => m.type === motor.type && m.id !== motor.id) // Filter tipe sama, kecualikan motor saat ini
-              .slice(0, 4) // Ambil maksimal 4 motor
+              .filter((m) => {
+                const currentBrand = motor.name.split(" ")[0];
+                const brand = m.name.split(" ")[0];
+
+                return (
+                  m.id !== motor.id &&
+                  (m.type === motor.type || brand === currentBrand)
+                );
+              })
+              .slice(0, 4)
               .map((m) => (
                 <MotorCard key={m.id} motor={m} />
               ))}
