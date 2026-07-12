@@ -144,8 +144,17 @@ export default function DetailMotor() {
                     <MessageSquare size={20} /> Hubungi Penjual
                   </button>
                 </Link>
-                <button className="w-full py-4 bg-green-500 text-white rounded-xl font-bold flex items-center justify-center gap-2 hover:bg-green-600 transition-colors">
-                  <Phone size={20} /> Telepon Penjual
+                <button
+                  onClick={() =>
+                    window.open(
+                      "https://wa.me/6281234567890?text=Halo%20saya%20tertarik%20dengan%20motor%20yang%20Anda%20jual.",
+                      "_blank",
+                    )
+                  }
+                  className="w-full py-4 bg-green-500 text-white rounded-xl font-bold flex items-center justify-center gap-2 hover:bg-green-600 transition-colors"
+                >
+                  <Phone size={20} />
+                  Chat via WhatsApp
                 </button>
 
                 <div className="mt-6 p-4 bg-green-50 rounded-2xl space-y-3">

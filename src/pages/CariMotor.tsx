@@ -157,11 +157,13 @@ export default function CariMotor() {
                 onChange={(e) => setSelectedYear(e.target.value)}
               >
                 <option value="Semua Tahun">Semua Tahun</option>
-                {[...new Set(allMotors.map((m) => m.year))].map((y) => (
-                  <option key={y} value={y}>
-                    {y}
-                  </option>
-                ))}
+                {[...new Set(allMotors.map((m) => m.year))]
+                  .sort((a, b) => Number(b) - Number(a))
+                  .map((y) => (
+                    <option key={y} value={y}>
+                      {y}
+                    </option>
+                  ))}
               </select>
 
               <h3 className="font-bold mb-2">Lokasi</h3>
@@ -170,11 +172,13 @@ export default function CariMotor() {
                 onChange={(e) => setSelectedLocation(e.target.value)}
               >
                 <option value="Semua Lokasi">Semua Lokasi</option>
-                {[...new Set(allMotors.map((m) => m.location))].map((l) => (
-                  <option key={l} value={l}>
-                    {l}
-                  </option>
-                ))}
+                {[...new Set(allMotors.map((m) => m.location))]
+                  .sort((a, b) => a.localeCompare(b))
+                  .map((l) => (
+                    <option key={l} value={l}>
+                      {l}
+                    </option>
+                  ))}
               </select>
             </div>
           </aside>

@@ -1,4 +1,4 @@
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import {
   CheckCircle,
   Home,
@@ -14,6 +14,7 @@ import Footer from "../components/blocks/Footer";
 
 export default function BookingSuccess() {
   const location = useLocation();
+  const navigate = useNavigate();
   const { motor, date, time } = location.state || {};
 
   const formattedDate = date
@@ -124,8 +125,12 @@ export default function BookingSuccess() {
             >
               <Search size={18} /> Cari Motor Lain
             </Link>
-            <button className="flex-1 py-4 border border-gray-200 rounded-2xl font-bold flex items-center justify-center gap-2">
-              <Download size={18} /> Simpan Bukti
+            <button
+              onClick={() => navigate("/CariMotor")}
+              className="flex-1 py-4 border border-gray-200 rounded-2xl font-bold flex items-center justify-center gap-2"
+            >
+              <Download size={18} />
+              Simpan Bukti
             </button>
           </div>
         </div>
