@@ -12,7 +12,7 @@ export default function Dashboard() {
   const currentRole = null;
   return (
     <div className="bg-gray-50 min-h-screen">
-      <Navbar userRole={currentRole} />
+      <Navbar />
 
       {/* Semua konten di sini */}
       <main>
